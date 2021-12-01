@@ -1,0 +1,59 @@
+.grid-pv-pm{
+    display: grid;
+    grid-template-columns: 50fr 50fr;
+    gap: 2px;
+ }
+
+ .pv, .pm{
+    background-color: white;
+ }
+
+ .grid-pv-max-atual, .grid-pm-max-atual{
+    display: grid;
+    grid-template-columns: 50fr 1fr 50fr;
+    padding: 4px 16px 2px 16px;
+    border: 1px solid var(--dark);
+ }
+
+ .divisoria-y {
+   border-left: 1px solid var(--dark);
+   margin: 8px;
+ }
+
+ .label-pv-pm{
+   font-size: 1.25em;
+   font-weight: bold;
+   background: var(--dark);
+   color: var(--primary);
+   padding: 4px 0 4px 0;
+ }
+ 
+ .label-pv-max, .label-pm-max{
+    font-style: italic;
+    color: gray;
+    font-size: small;
+ }
+ 
+ .label-pv-atuais, .label-pm-atuais{
+    font-style: italic;
+    color: gray;
+    font-size: small;
+ }
+
+ .input-pv-max, .input-pm-max{
+   font-size: 1.7em;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    border: none;
+    padding: 16px 0 16px 0;
+ }
+ 
+ .input-pv-min, .input-pm-min{
+   font-size: 1.7em;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    border: none;
+    padding: 16px 0 16px 0;
+ }

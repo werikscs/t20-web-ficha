@@ -1,0 +1,44 @@
+.estatisticas{
+    display: grid;
+ }
+
+.atributos{
+    display: grid;
+    grid-template-columns: repeat(6, 16.6fr);
+    gap: 2px;
+ }
+
+ .numeros-atributos{
+   border: 1px solid var(--dark);
+   background-color: var(--primary);
+ }
+
+ .input-atributos{
+   font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+    border: none;
+    padding: 6px 0 6px 0;
+ }
+
+ .input-atributos-mod{
+   font-size: 1.5em;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    border: none;
+    padding: 6px 0 6px 0;
+ }
+
+.label-atributos{
+   font-size: 1.25em;
+   font-weight: bold;
+   background-color: var(--dark);
+   color: white;
+   padding: 4px 0 4px 0;
+}
+
+.divisoria-x{
+   border-top: 1px solid var(--dark);
+   margin: 0 16px 0 16px;
+}

@@ -1,0 +1,28 @@
+.ficha{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    max-width: 640px;
+ }
+
+ .nome-page{
+    color: var(--primary);
+    text-align: center;
+    padding: 36px;
+    background-color: var(--dark);
+    margin: 0 4px 0 4px;
+ }
+
+ .conteudo-ficha{
+    padding: 8px;
+    display: grid;
+    width: 100%;
+    margin: auto;
+    background-color: transparent;
+    grid-row-gap: 5px;
+ }
+
+p{
+   text-align: center;
+}
+

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width">
+
+   <title></title>
+   
+   <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="css-float-btn.css">
+   <link rel="stylesheet" href="css-info-gerais.css">
+   <link rel="stylesheet" href="css-ficha.css">
+   <link rel="stylesheet" href="css-atributos.css">
+   <link rel="stylesheet" href="css-pv-pm.css">
+   <link rel="stylesheet" href="css-pericias.css">
+   <link rel="stylesheet" href="css-defesa-armadura-escudo.css">
+   <link rel="stylesheet" href="css-estatisticas.css">
+
+   <link rel="stylesheet" href="max720p/css-styles.css">
+   <link rel="stylesheet" href="max720p/css-info-gerais.css">
+   <link rel="stylesheet" href="max720p/css-pericias.css">
+   <link rel="stylesheet" href="max720p/css-pv-pm.css">
+   <link rel="stylesheet" href="max720p/css-atributos.css">
+   <link rel="stylesheet" href="max720p/css-ficha.css">
+   <link rel="stylesheet" href="max720p/css-defesa-armadura-escudo.css">
+</head>
+
+   <body>
+
+      <div><input class="float" type="button" value="..."></div>
+      
+      <div class="ficha">
+
+         <div class="nome-page">
+             <h1>Web Ficha</h1>
+         </div>
+
+         <div class="conteudo-ficha">
+
+            <div class="info-gerais">
+
+               <div>
+                  <div class="label-info-gerais">Personagem</div>
+                  <input class="input-info-gerais" type="text" id="personagem" name="personagem" placeholder="Nome do Personagem">
+               </div>
+
+               <div>
+                  <div class="label-info-gerais">Jogador</div>
+                  <input class="input-info-gerais" type="text" id="jogador" name="jogador" placeholder="Nome do Jogador">
+               </div>
+
+               <div>
+                  <div class="label-info-gerais">Raça</div>
+                  <input class="input-info-gerais" type="text" id="raca" name="raca" placeholder="Raça">
+               </div>
+
+               <div class="classe-nivel">
+
+                  <div class="classe">
+                     <div class="label-info-gerais">Classe</div>
+                     <input class="input-info-gerais" type="text" id="classe" name="classe" placeholder="Classe(s)">
+                  </div>
+
+                  <div class="nivel">
+                     <div class="label-info-gerais">Nível</div>
+                     <input class="input-info-gerais-nivel" type="number" id="nivel" name="nivel" placeholder="">
+                  </div>
+
+               </div>
+
+               <div>
+                  <div class="label-info-gerais">Origem</div>
+                  <input class="input-info-gerais" type="text" id="origem" name="origem" placeholder="Origem">
+               </div>
+
+               <div>
+                  <div class="label-info-gerais">Divindade</div>
+                  <input class="input-info-gerais" type="text" id="divindade" name="divindade" placeholder="Divindade">
+               </div>
+
+            </div>
+
+            <div class="estatisticas">
+
+               <div class="atributos">
+                  
+                  <div class="atributo for" >
+                     <div class="label-atributos"><p>FOR</p></div>
+                     <div class="numeros-atributos">
+                        <input class="input-atributos" type="number" id="FOR" name="FOR" value="10">
+                        <div class="divisoria-x"></div>
+                        <input class="input-atributos-mod" type="number" id="mod-FOR" name="mod-FOR" value="0" readonly="true">
+                     </div>
+                  </div>
+
+                  <div class="atributo des" >
+                     <div class="label-atributos"><p>DES</p></div>
+                     <div class="numeros-atributos">
+                        <input class="input-atributos" type="number" id="DES" name="DES" value="10">
+                        <div class="divisoria-x"></div>
+                        <input class="input-atributos-mod" type="number" id="mod-DES" name="mod-DES" value="0" readonly="true">
+                     </div>
+                  </div>
+
+                  <div class="atributo con" >
+                     <div class="label-atributos"><p>CON</p></div>
+                     <div class="numeros-atributos">
+                        <input class="input-atributos" type="number" id="CON" name="CON" value="10">
+                        <div class="divisoria-x"></div>
+                        <input class="input-atributos-mod" type="number" id="mod-CON" name="mod-CON" value="0" readonly="true">
+                     </div>
+                  </div>
+
+                  <div class="atributo int" >
+                     <div class="label-atributos"><p>INT</p></div>
+                     <div class="numeros-atributos">
+                        <input class="input-atributos" type="number" id="INT" name="INT" value="10">
+                        <div class="divisoria-x"></div>
+                        <input class="input-atributos-mod" type="number" id="mod-INT" name="mod-INT" value="0" readonly="true">
+                     </div>
+                  </div>
+
+                  <div class="atributo sab" >
+                     <div class="label-atributos"><p>SAB</p></div>
+                     <div class="numeros-atributos">
+                        <input class="input-atributos" type="number" id="SAB" name="SAB" value="10">
+                        <div class="divisoria-x"></div>
+                        <input class="input-atributos-mod" type="number" id="mod-SAB" name="mod-SAB" value="0" readonly="true">
+                     </div>
+                  </div>
+
+                  <div class="atributo car" >
+                     <div class="label-atributos"><p>CAR</p></div>
+                     <div class="numeros-atributos">
+                        <input class="input-atributos" type="number" id="CAR" name="CAR" value="10">
+                        <div class="divisoria-x"></div>
+                        <input class="input-atributos-mod" type="number" id="mod-CAR" name="mod-CAR" value="0" readonly="true">
+                     </div>
+                  </div>
+
+               </div>
+
+               <div class="grid-pv-pm">
+
+                  <div class="pv">
+
+                     <div class="label-pv-pm"><p>Pontos de Vida</p></div>
+
+                     <div class="grid-pv-max-atual">
+                        
+                        <div class="pv-max">
+                           <input class="input-pv-max" type="number" id="pv-max" name="pv-max" value="0">
+                           <div class="label-pv-max"><p>Máximos</p></div>
+                        </div>
+
+                        <div class="divisoria-y"></div>
+
+                        <div class="pv-atual">
+                           <input class="input-pv-min" type="number" id="pv-atual" name="pv-atual" value="0">
+                           <div class="label-pv-atuais"><p>Atuais</p></div>
+                        </div>
+
+                     </div>
+
+                  </div>
+
+                  <div class="pm">
+
+                     <div class="label-pv-pm"><p>Pontos de Mana</p></div>
+
+                     <div class="grid-pm-max-atual">
+                        
+                        <div class="pm-max">
+                           <input class="input-pm-max" type="number" id="pm-max" name="pm-max" value="0"> 
+                           <div class="label-pm-max"><p>Máximos</p></div>
+                        </div>
+
+                        <div class="divisoria-y"></div>
+
+                        <div class="pm-atual">
+                           <input class="input-pm-min" type="number" id="pm-atual" name="pm-atual" value="0">
+                           <div class="label-pm-atuais"><p>Atuais</p></div>
+                        </div>
+
+                     </div>
+
+                  </div>
+
+               </div>
+
+            </div>
+
+            <div class="grid-defesa-armadura-escudo">
+               
+               <div class="grid-defesa">
+
+                  <div class="label-defesa"><p>DEFESA</p></div>
+
+                  <div class="grid-defesa-interno">
+
+                     <div class="legenda-defesa">
+                        <div class="label-legenda-defesa"><p>TOTAL</p></div>
+                        <div class="label-legenda-defesa"></div>                        
+                        <div class="label-legenda-defesa"></div>                        
+                        <div class="label-legenda-defesa"></div>                        
+                        <div class="label-legenda-defesa"><p>mod<br>atributo</p></div>
+                        <div class="label-legenda-defesa"></div>                        
+                        <div class="label-legenda-defesa"><p>Bônus<br>Armadura</p></div>
+                        <div class="label-legenda-defesa"></div>                        
+                        <div class="label-legenda-defesa"><p>Bônus<br>Escudo</p></div>
+                        <div class="label-legenda-defesa"></div>                        
+                        <div class="label-legenda-defesa"><p>Outros</p></div>
+                     </div>
+
+                     <div class="inputs-defesa">
+
+                        <div class="total-defesa">
+                           <input class="input-total-defesa" type="number" id="total-defesa" name="total-defesa">
+                        </div>
+                        
+                        <div class="label-legenda-defesa"><p>=</p></div>
+                        <div class="label-legenda-defesa"><p class="defesa-10">10</p></div>
+                        <div class="label-legenda-defesa"><p>+</p></div>
+      
+                        <div class="mod-atributo-defesa">
+                           <input class="input-mod-defesa" type="number" id="mod-defesa" name="mod-defesa">
+                        </div>
+      
+                        <div class="label-legenda-defesa"><p>+</p></div>                        
+      
+                        <div class="bonus-armadura">
+                           <input class="input-bonus-armadura" type="number" id="bonus-armadura" name="bonus-armadura">
+                        </div>
+      
+                        <div class="label-legenda-defesa"><p>+</p></div>         
+      
+                        <div class="bonus-escudo">
+                           <input class="input-bonus-escudo" type="number" id="bonus-escudo" name="bonus-escudo">
+                        </div>
+      
+                        <div class="label-legenda-defesa"><p>+</p></div>
+      
+                        <div class="outros-defesa">
+                           <input class="input-outros-defesa" type="number" id="outros-defesa" name="outros-defesa">
+                        </div>
+                     </div>
+
+                  </div>
+
+               </div>
+
+               <div class="grid-armadura-escudo">
+
+                  <div class="legenda-armadura-escudo">
+                     <div class="label-legenda-armadura-escudo"><p>ARMADURA & ESCUDO</p></div>
+                     <div class="label-legenda-armadura-escudo-def"><p>Defesa</p></div>
+                     <div class="label-legenda-armadura-escudo-pen"><p>Penalidade</p></div>
+                  </div>
+
+                  <div class="inputs-armadura-escudo">
+
+                     <div class="armadura-e-escudo">
+                        <input class="input-nome-armadura-escudo" type="text" id="nome-armadura-escudo1" name="nome-armadura-escudo1">
+                        <input class="input-nome-armadura-escudo" type="text" id="nome-armadura-escudo2" name="nome-armadura-escudo2">
+                     </div>
+   
+                     <div class="defesa-item">
+                        <input class="input-defesa-armadura-escudo" type="number" id="defesa-armadura-escudo1" name="defesa-armadura-escudo1">
+                        <input class="input-defesa-armadura-escudo" type="number" id="defesa-armadura-escudo2" name="defesa-armadura-escudo2">
+                     </div>
+                        
+                     <div class="penalidade-item">
+                        <input class="input-penalidade-armadura-escudo" type="number" id="penalidade-armadura-escudo1" name="penalidade-armadura-escudo1">
+                        <input class="input-penalidade-armadura-escudo" type="number" id="penalidade-armadura-escudo2" name="penalidade-armadura-escudo2">
+                     </div>
+
+                  </div>
+
+               </div>
+            </div>
+
+            <div class="ataques"></div>
+
+            <div class="grid-pericias">
+
+               <div class="grid-pericia">
+                  <div class="label-legenda-pericia"></div>
+                  <div class="label-legenda-pericia"><p><strong>PERÍCIAS</strong></p></div>
+                  <div class="label-legenda-pericia"><p>TOTAL</p></div>
+                  <div class="label-legenda-pericia"></div>
+                  <div class="label-legenda-pericia"><p>1/2 do<br>nível</p></div>
+                  <div class="label-legenda-pericia"></div>
+                  <div class="label-legenda-pericia"><p>mod<br>atrib</p></div>
+                  <div class="label-legenda-pericia"></div>
+                  <div class="label-legenda-pericia"><p>Treino</p></div>
+                  <div class="label-legenda-pericia"></div>
+                  <div class="label-legenda-pericia"><p>Outros</p></div>
+               </div>
+
+               <ul id="lista-pericias"></ul>
+
+            </div>
+
+         </div>
+
+      </div>
+
+      <script src="firebase-init.js"> </script>
+      <script src="pericias.js"></script>
+      <script src="script.js"></script>
+
+   </body>
+</html>

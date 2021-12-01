@@ -1,0 +1,57 @@
+:root{
+   --bg:#dddddd;
+   --primary:#ffffff;
+   --secondary:#9297A6;
+   --dark:#262525;
+   --accent: #70CFFF;
+   --cor-texto: white;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   font-family: Arial, sans-serif;
+   zoom: 1.5;
+   margin-bottom: 8px;
+   background-color: var(--bg);
+}
+
+/* Retira botoes do input number*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+
+/*
+input[type="number"]:not(.input-atributos):not(.input-atributos-mod):not(.input-pv-pm-max):not(.input-pv-pm-min){
+   width: 100%;
+   text-align: center;
+   border: transparent;
+   padding: 6px 0 6px 0;
+   border: 1px solid var(--dark);
+   background-color: var(--primary);
+}
+
+/*
+input[type="text"]:focus{
+   border-color: var(--accent);
+   outline: none;
+   box-shadow: 1px 1px 1px var(--accent);
+}
+
+input[type="number"]:focus{
+   border-color: var(--accent);
+   outline: none;
+}
+/*
+input:focus, button:hover{
+   border-color: #4ca1af;
+   outline: none;
+   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.0125), 0 0 8px rgba(76, 161, 175, 0.5);
+}*/
+

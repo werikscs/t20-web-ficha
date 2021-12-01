@@ -1,0 +1,9 @@
+@media(max-width:720px){
+    .nome-page{
+        color: var(--primary);
+        text-align: center;
+        padding: 36px;
+        background-color: var(--dark);
+        margin: 0;
+    }
+}

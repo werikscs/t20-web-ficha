@@ -1,0 +1,19 @@
+@media(max-width:720px){
+
+    .input-atributos{
+        font-size: 1.50em;
+        width: 100%;
+        text-align: center;
+        border: none;
+        padding: 6px 0 6px 0;
+     }
+    
+     .input-atributos-mod{
+        font-size: 1.50em;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        border: none;
+        padding: 6px 0 6px 0;
+     }
+}

@@ -1,0 +1,23 @@
+.float{
+   position:fixed;
+   width:56px;
+   height:56px;
+   bottom:16px;
+   right:16px;
+   bottom: 32px;
+   background-color: var(--dark);
+   border-radius:50px;
+   border: none;
+   text-align:center;
+}
+
+/* testanto ainda*/
+.float:focus{
+   outline: none;
+   background-color: yellow;
+}
+
+
+input[type="button"]{
+   color: white;
+}

@@ -1,0 +1,100 @@
+.grid-defesa-armadura-escudo{
+    display: grid;
+    grid-template-columns: 100fr;
+    gap: 5px;
+}
+
+.grid-defesa{
+    display: grid;
+    align-items: center;
+    background-color: var(--primary);
+}
+
+.label-defesa{
+    font-size: 1.25em;
+    font-weight: bold;
+    background: var(--dark);
+    color: var(--primary);
+    padding: 4px 0 4px 0;
+}
+
+.grid-defesa-interno{
+    padding: 6px;
+    border: 1px solid var(--dark);
+}
+
+.defesa-10{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.inputs-defesa, .legenda-defesa{
+    display: grid;
+    grid-template-columns: 15.6fr 5fr 5fr 3fr 15.6fr 3fr 15.6fr 3fr 15.6fr 3fr 15.6fr;
+    align-items: center;
+}
+
+.grid-armadura-escudo{
+    display: grid;
+    align-items: center;
+    background-color: var(--primary);
+    
+}
+
+.legenda-armadura-escudo{
+    display: grid;
+    grid-template-columns: 60fr 20fr 20fr;
+}
+
+.inputs-armadura-escudo{
+    display: grid;
+    grid-template-columns: 60fr 20fr 20fr;
+    gap: 8px;
+    padding: 8px;
+    border: 1px solid var(--dark);
+}
+
+.label-legenda-armadura-escudo{
+    font-size: 1.25em;
+    font-weight: bold;
+    background: var(--dark);
+    color: var(--primary);
+    padding: 4px 0 4px 0;
+}
+
+.label-legenda-armadura-escudo-def,
+.label-legenda-armadura-escudo-pen{
+    font-size: 0.9em;
+    font-weight: bold;
+    background: var(--dark);
+    color: var(--primary);
+    padding: 6px 8px 6px 0;
+}
+
+.input-total-defesa,
+.input-mod-defesa,
+.input-bonus-armadura,
+.input-bonus-escudo,
+.input-outros-defesa{
+    font-size: 1.15em;
+    width: 100%;
+    border: none;
+    padding: 6px 8px 6px 8px;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--dark);
+    background-color: var(--primary);
+    text-align: center;
+}
+
+.input-nome-armadura-escudo,
+.input-defesa-armadura-escudo,
+.input-penalidade-armadura-escudo{
+    font-size: 1.15em;
+    width: 100%;
+    border: none;
+    padding: 0 8px 6px 8px;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--dark);
+    background-color: var(--primary);
+    text-align: center;
+}

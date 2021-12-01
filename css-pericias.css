@@ -1,0 +1,32 @@
+.grid-pericias{
+   display: grid;
+   grid-template-columns: 100fr;
+}
+
+.grid-pericia{
+   font-size: medium;
+   display: grid;
+   grid-template-columns: 5fr 25fr 10fr 3fr 10fr 5fr 10fr 5fr 10fr 5fr 10fr;
+   margin-top: 5px;
+}
+
+.label-legenda-pericia{
+   margin: auto 0 auto 0;
+   font-size: 0.8em;
+}
+
+.label-pericia{
+   margin: auto;
+}
+
+.input-pericia{
+   width: 100%;
+   text-align: center;
+   padding: 6px 0 6px 0;
+   border: 1px solid var(--dark);
+   background-color: var(--primary);
+}
+
+.input-pericia-checkbox{
+   margin: auto;
+}

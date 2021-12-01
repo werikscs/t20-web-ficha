@@ -1,0 +1,46 @@
+.info-gerais{
+   display: grid;
+   grid-template-columns: 50fr 50fr;
+   gap: 2px;
+}
+
+.label-info-gerais{
+   font-size: 1em;
+   width: 100%;
+   padding-left: 8px;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+
+.input-info-gerais{
+   width: 100%;
+   border: none;
+   padding: 6px 0 6px 6px;
+   box-sizing: border-box;
+   border: 1px solid var(--dark);
+   background-color: var(--primary);
+}
+
+.classe-nivel{
+   display: grid;
+   grid-template-columns: 80fr 20fr;
+   gap: 2px;
+}
+
+.input-info-gerais-nivel{
+   width: 100%;
+   text-align: center;
+   outline: none;
+   font-weight: bolder;
+   border: 1px solid var(--dark);
+   background-color: var(--primary);
+}
+
+.input-info-gerais-nivel{
+   width: 100%;
+   text-align: center;
+   outline: none;
+   padding: 6px 0 6px 0;
+   border: 1px solid var(--dark);
+   background-color: var(--primary);
+}

@@ -1,0 +1,7 @@
+@media(max-width: 720px){
+    .grid-pericia{
+        font-size: 0.8em;
+        display: grid;
+        grid-template-columns: 5fr 28fr 11fr 3fr 11fr 3fr 11fr 3fr 11fr 3fr 11fr
+    }
+}

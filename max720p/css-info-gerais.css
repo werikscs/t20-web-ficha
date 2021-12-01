@@ -1,0 +1,17 @@
+@media(max-width:	720px){
+   .info-gerais{
+      display: grid;
+      grid-template-columns: 50fr;
+      gap: 5px;
+   }
+
+   .label-info-gerais{
+      font-size: 1.25em;
+   }
+
+   .input-info-gerais, .input-info-gerais-nivel{
+      font-size: 1.25em;
+   }
+}
+
+ 
